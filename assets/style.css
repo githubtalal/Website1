@@ -1,0 +1,883 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav * {
+    color: #FFFFFF;
+}
+
+nav > *:not(:last-child) {
+    margin-right: 150px;
+}
+
+.header {
+    height: 956px;
+    background-image: url('images/image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 6px 15px 6px 15px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    margin-right: 12px;
+}
+
+    nav a.active {
+        background-color: #ffffff;
+        color: #05073C;
+    }
+
+.header .container > div {
+    margin-top: 250px;
+}
+
+    .header .container > div p,
+    .header .container > div h1 {
+        color: #ffffff;
+    }
+
+    .header .container > div h1 {
+        width: 99%
+    }
+
+.main {
+    margin-top: -60px
+}
+
+    .main > img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .main > div:first-of-type {
+        margin-top: -115px;
+        z-index: 2;
+        background-color: #ffffff;
+        padding: 13px;
+        margin-left: calc(25% / 2);
+        position: absolute;
+        width: 75%;
+        border-radius: 50px;
+    }
+
+    .main .img-tags > div {
+        width: 30%;
+        margin-right: 5%;
+    }
+
+    .main .img-tags svg {
+        height: 70px;
+        width: 70px;
+        cursor: pointer;
+        transition: 0.3s linear;
+        margin-right: 21px;
+    }
+
+            .main > div:first-of-type svg:hover,
+            .main > div:first-of-type svg.clicked {
+                fill: #EB662B;
+            }
+
+    .main .img-tags button {
+        width: 15%;
+        background-color: #EB662B;
+        border-radius: 50px;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffffff;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .main .frame1 {
+        background-color: #EB662B0D;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+.frame1 h3:first-of-type {
+    color: #05073C;
+}
+
+.frame2 h3:first-of-type {
+    color: #05073C;
+}
+
+.frame4 h3:first-of-type {
+    color: #05073C;
+}
+
+.frame6 h3:first-of-type {
+    color: #05073C;
+    margin-bottom: 50px
+}
+
+.main .frame1 li {
+    padding: 10px;
+}
+
+    .main .frame1 li a {
+        color: #000000;
+        border-radius: 30px;
+    }
+
+    .main .frame1 li.active a {
+        color: #EB662B;
+        background-color: #ffffff;
+    }
+
+    .main .frame1 li:hover a {
+        color: #EB662B;
+        background-color: #ffffff;
+    }
+
+    .main .frame1 .card-body, .frame8 .card-body {
+        background-color: #ffffff;
+    }
+
+.main .frame1 .container div:first-of-type {
+    margin-bottom: 40px;
+}
+
+.main .frame1 .swiper-slide > img:first-of-type,
+.frame6 img:first-of-type {
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+    .main .frame1 .swiper-slide:hover > img:first-of-type,
+    .frame6 .card:hover img:first-of-type {
+        opacity: 0.6;
+    }
+
+    .main .frame1 .swiper-slide > img:last-of-type {
+        position: absolute;
+        left: 300px;
+    }
+
+.main .frame1 .swiper-slide span,
+.frame6 span {
+    color: #717171;
+    margin-left: 30px;
+}
+
+.main .frame1 .swiper-slide .card-text > p:first-of-type {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.main .frame1 .swiper-slide p, .frame8 p {
+    color: #05073C;
+}
+
+.main .frame1 .swiper-slide .card-text .d-flex,
+.frame6 .card-text .d-flex {
+    border-top: 2px solid #c1ddf1;
+}
+
+    .main .frame1 .swiper-slide .card-text .d-flex p:first-of-type,
+    .frame6 .card-text .d-flex p:first-of-type {
+        margin-left: 15px;
+    }
+
+.frame5 .swiper-slide {
+    cursor: pointer;
+}
+
+.main .frame1 .container > div:last-of-type {
+    width: 15%;
+    margin-top: -40px;
+}
+
+.main .frame1 .swiper-wrapper {
+    height: 80%;
+}
+
+.main .frame2 {
+    padding-top: 100px;
+}
+
+    .main .frame2 .img-gallery {
+        margin-top: 40px;
+    }
+
+        .main .frame2 .img-gallery img {
+            border-radius: 20px;
+            transition: 0.5s ease-out;
+            cursor: pointer;
+        }
+
+            .main .frame2 .img-gallery img:hover {
+                transform: scale(1.1);
+            }
+
+        .main .frame2 .img-gallery .img-container {
+            position: relative;
+        }
+
+        .main .frame2 .img-gallery > div:last-of-type h5 {
+            top: 458px;
+        }
+
+        .main .frame2 .img-gallery h5 {
+            position: absolute;
+            top: 190px;
+            left: 30px;
+            color: #ffffff;
+        }
+
+        .main .frame2 .img-gallery div.d-flex {
+            gap: 30px;
+        }
+
+.frame3 {
+    margin-top: 100px
+}
+
+    .frame3 img {
+        height: 600px;
+    }
+
+        .frame3 img:first-of-type,
+        .frame3 img:last-of-type {
+            width: 600px;
+        }
+
+    .frame3 > div {
+        position: relative;
+    }
+
+    .frame3 .details {
+        position: absolute;
+        width: 30%;
+        top: 150px;
+        left: 50px
+    }
+
+    .frame3 p {
+        margin-top: 20px;
+        margin-bottom: 30px
+    }
+
+    .frame3 button {
+        background-color: #EB662B;
+        padding: 20px 50px 20px 20px;
+        border: none;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .frame3 button:hover {
+            color: #EB662B;
+            background-color: #230707;
+            transform: translateY(-10px);
+        }
+
+    .frame3 h1,
+    .frame3 p {
+        color: #05073C;
+    }
+
+    .frame3 span {
+        color: red;
+    }
+
+.frame4 .row .d-flex {
+    gap: 50px;
+    cursor: pointer;
+}
+
+    .frame4 .row .d-flex img,
+    .frame4 .row .d-flex div * {
+        transition: 0.2s ease-in;
+    }
+
+    .frame4 .row .d-flex:hover img {
+        transform: scale(1.1);
+    }
+
+    .frame4 .row .d-flex:hover div * {
+        text-shadow: #7a7dd2 7px 0 5px;
+    }
+
+    .frame4 .row .d-flex div * {
+        color: #05073C;
+    }
+
+.frame4 a {
+    text-decoration: none;
+}
+
+    .frame4 a:hover,
+    .frame2 a:hover {
+        text-decoration: underline !important;
+    }
+
+.frame5 {
+    margin-top: 70px;
+    padding: 60px;
+}
+
+    .frame5 .container {
+        background-image: url("images/custBG.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .frame5 .swiper2 {
+        height: 500px;
+    }
+
+    .frame5 h3 {
+        font-weight: 800;
+        margin-bottom: 50px;
+        color: #05073C;
+    }
+
+    .frame5 h5 {
+        color: #EB662B;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .frame5 p {
+        color: #05073C;
+        font-size: 20px;
+        font-weight: 400;
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .frame5 h6 {
+        color: #05073C;
+    }
+
+    .frame5 span {
+        color: #05073C;
+        font-size: 17px;
+    }
+
+    .frame5 .person-sec {
+        position: relative;
+    }
+
+        .frame5 .person-sec img:last-of-type {
+            position: absolute;
+            top: 0;
+            left: calc(50% - 70px)
+        }
+
+.frame6 img:last-of-type {
+    position: absolute;
+    left: 200px;
+}
+
+.frame6 p.p-2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.frame6 .card {
+    width: calc(94% / 4);
+    cursor: pointer;
+}
+
+.frame6 .card-text > p:first-of-type {
+    margin-top: 30px;
+}
+
+.frame7 .container {
+    background-image: url("images/Frame.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.frame7 {
+    margin-top: 100px
+}
+
+    .frame7 .container > div {
+        padding: 100px
+    }
+
+    .frame7 h1 {
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    .frame7 p {
+        color: #ffffff;
+        width: 90%;
+        margin-bottom: 40px
+    }
+
+    .frame7 span {
+        color: #ffffff;
+    }
+
+    .frame7 .container .d-flex {
+        margin-top: 10px;
+        width: 65%;
+    }
+
+        .frame7 .container .d-flex * {
+            border-radius: 10px;
+            border: none;
+        }
+
+        .frame7 .container .d-flex [type="email"] {
+            padding: 12px;
+        }
+
+        .frame7 .container .d-flex [type="button"] {
+            padding: 12px 20px 12px 20px;
+            color: #4A43C4;
+            transition: 0.2s ease-in;
+        }
+
+            .frame7 .container .d-flex [type="button"]:hover {
+                background-color: #320808;
+                color: #c29f9f;
+            }
+
+            nav .header-right a:hover {
+                background-color: #ffffff;
+                color: #05073C;
+            }
+
+.main .img-tags button:hover {
+    color: #EB662B;
+    background-color: #d6a8a8;
+}
+
+.frame8 {
+    margin-top: 70px
+}
+
+    .frame8 .container > div:first-of-type {
+        margin-bottom: 40px;
+    }
+
+        .frame8 .container > div:first-of-type a {
+            text-decoration: none;
+        }
+
+        .frame8 .container > div:first-of-type a:hover {
+            text-decoration: underline;
+        }
+
+        .frame8 .article {
+            width: calc(94% / 3);
+            cursor: pointer;
+        }
+
+        .frame8 .article img {
+            transition: 0.3s ease-out;
+        }
+
+        .frame8 .article:hover img {
+            transform: scale(1.1);
+            opacity: 0.6;
+        }
+
+            .frame8 .article div {
+                margin-top: 25px;
+            }
+
+            .frame8 .article div svg {
+                margin-inline: 20px
+            }
+
+            .frame8 .article div span {
+                color: #05073C;
+            }
+
+        .frame8 .article h4 {
+            color: #05073C;
+            margin-top: 15px
+        }
+
+.footer {
+    background-color: #EB662B0D;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+    .footer .container * {
+        color: #05073C;
+    }
+
+    .footer .container .d-flex:first-of-type span {
+        color: red;
+    }
+
+    .footer .container .d-flex:first-of-type {
+        margin-bottom: 30px;
+    }
+
+    .footer a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .footer .container > .d-flex:nth-of-type(2) {
+        margin-bottom: 90px;
+        margin-top: 40px;
+    }
+
+        .footer .container > .d-flex:nth-of-type(2) > div:last-of-type > div:last-of-type {
+            margin-left: 15px;
+        }
+
+            .footer .container > .d-flex:nth-of-type(2) > div:last-of-type > div:last-of-type a {
+                margin-bottom: 10px;
+                transition: 0.3s linear;
+            }
+
+            .footer .container > .d-flex:nth-of-type(2) > div:last-of-type > div:last-of-type a:hover {
+                transform: scale(1.1);
+            }
+
+            .footer .container > .d-flex:nth-of-type(2) > div:last-of-type input {
+                padding: 15px;
+                border-radius: 12px;
+                border: none;
+                margin-right: 20px;
+                transition: all 0.2s ease-out;
+            }
+
+                .footer .container > .d-flex:nth-of-type(2) > div:last-of-type input[type="button"]:hover {
+                    color: #a6a3da;
+                    background-color: #2e3060;
+                }
+
+                .footer .container > .d-flex h4 {
+                    margin-bottom: 20px;
+                }
+
+    .footer .link {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .footer .link::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            height: 2px;
+            width: 0;
+            background-color: #05073C;
+            transition: 0.3s linear;
+        }
+
+    .footer .link:hover::after {
+        width: 100%;
+    }
+
+        .footer .link a {
+            margin-left: 5px;
+            transition: 0.3s linear;
+        }
+
+        .footer .link:hover a {
+            transform: scale(1.1);
+        }
+
+    .footer .container .d-flex:first-of-type a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 800px) {
+        nav {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        nav > * {
+            margin-right: 0 !important;
+            margin-bottom: 20px;
+        }
+    }
+
+@media (max-width: 500px) {
+    .main > img {
+        margin-top: 50px;
+    }
+
+    .header .container > div {
+        flex-wrap: wrap;
+    }
+
+        .header .container > div img {
+            margin-left: calc(85% / 2);
+        }
+
+    .main .img-tags {
+        width: 95% !important;
+        margin-left: calc(5% / 2) !important;
+    }
+
+        .main .img-tags > div {
+            flex-wrap: wrap;
+            margin-right: 0;
+        }
+
+        .main .img-tags button {
+            font-size: 12px;
+        }
+
+        .main .img-tags > div:last-of-type svg {
+            margin-top: -25px;
+        }
+
+
+
+    .main .frame1 .swiper-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .main .frame1 .swiper-wrapper > div {
+        width: 100% !important;
+    }
+
+    .frame2 .d-flex {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+        .frame2 .d-flex > div {
+            width: 100%;
+        }
+
+        .frame2 .d-flex img {
+            width: 95%;
+        }
+
+    .main .frame2 .img-gallery h5 {
+        top: 20px !important;
+    }
+
+    .frame3 .container.d-flex {
+        flex-wrap: wrap;
+    }
+
+    .frame3 .container img {
+        width: 100%;
+    }
+
+    .frame5 .swiper2 {
+        height: 100%;
+    }
+
+    .frame5 p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .frame6 .container > div {
+        flex-wrap: wrap;
+    }
+
+        .frame6 .container > div .card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+    .frame7 .container {
+        flex-wrap: wrap;
+    }
+
+    .frame7 .container > * {
+        width: 100%
+    }
+
+        .frame7 .container > div {
+            padding: 50px;
+        }
+
+        .frame7 .container .d-flex {
+            width: 115%;
+        }
+
+    .frame8 .container .d-flex:last-of-type {
+        flex-wrap: wrap;
+    }
+
+        .frame8 .container .d-flex:last-of-type .article {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .frame8 .container .d-flex:last-of-type .article img {
+            width: 100%
+        }
+
+    .footer .container > .d-flex:nth-of-type(2) {
+        flex-wrap: wrap;
+    }
+
+        .footer .container > .d-flex:nth-of-type(2) > * {
+            margin-bottom: 20px;
+        }
+
+    .footer .container > .d-flex:nth-of-type(3) {
+        flex-wrap: wrap;
+    }
+
+        .footer .container > .d-flex:nth-of-type(3) > * {
+            margin-bottom: 20px;
+        }
+
+    .frame3 .details {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .main > img {
+        margin-top: 40px;
+    }
+
+    .main .img-tags {
+        width: 95% !important;
+        margin-left: calc(5% / 2) !important;
+    }
+
+    .main .img-tags > div {
+        flex-wrap: wrap;
+    }
+
+        .main .img-tags > div:last-of-type svg {
+            margin-top: -25px;
+        }
+
+    .frame2 .d-flex {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+        .frame2 .d-flex > div {
+            width: 100%;
+        }
+
+        .frame2 .d-flex img {
+            width: 95%;
+        }
+
+    .main .frame2 .img-gallery h5 {
+        top: 20px !important;
+    }
+
+    .frame3 .container.d-flex {
+        flex-wrap: wrap;
+    }
+
+    .frame3 .container img {
+        width: 100%;
+    }
+
+    .frame5 .swiper2 {
+        height: 100%;
+    }
+
+    .frame5 p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .frame6 .container > div {
+        flex-wrap: wrap;
+    }
+
+    .frame6 .container > div .card {
+        width: 100%;
+    }
+
+        .frame6 .container > div .card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+    .frame7 .container {
+        flex-wrap: wrap;
+    }
+
+        .frame7 .container > * {
+            width: 100%
+        }
+
+        .frame7 .container > div {
+            padding: 50px;
+        }
+
+        .frame7 .container .d-flex {
+            width: 115%;
+        }
+
+        .frame8 .container .d-flex:last-of-type {
+            flex-wrap: wrap;
+        }
+
+    .frame8 .container .d-flex:last-of-type .article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+        .frame8 .container .d-flex:last-of-type .article img {
+            width: 100%
+        }
+
+    .footer .container > .d-flex:nth-of-type(2) {
+        flex-wrap: wrap;
+    }
+
+    .footer .container > .d-flex:nth-of-type(2) > * {
+        margin-bottom: 20px;
+    }
+
+    .footer .container > .d-flex:nth-of-type(3) {
+        flex-wrap: wrap;
+    }
+
+        .footer .container > .d-flex:nth-of-type(3) > * {
+            margin-bottom: 20px;
+        }
+
+    .frame3 .details {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    .main > img {
+        margin-top: 26px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .main > img {
+        margin-top: 15px;
+    }
+}
